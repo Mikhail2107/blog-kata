@@ -4,10 +4,12 @@ import format from 'date-fns/format'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { Popconfirm } from 'antd'
+
 import { fetchLikePost } from '../../service/likePost'
 import authorImg from '../../assets/img/photo.svg'
 import likeImg from '../../assets/img/like.svg'
 import likeActiveImage from '../../assets/img/likeActive.svg'
+
 import classes from './PostCard.module.scss'
 
 const PostCard = ({ title, description, tagList, favoritesCount, author, createdAt, slug, favorited }) => {
