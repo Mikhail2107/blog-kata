@@ -1,8 +1,8 @@
 import { CHANGE_PAGE } from '../reducers/pagination.reducer'
-const paginationAction = (page) => {
+
+export const paginationAction = (page) => {
   return {
     type: CHANGE_PAGE,
     page,
   }
 }
-export default paginationAction

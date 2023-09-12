@@ -4,7 +4,6 @@ import { Link, useNavigate } from 'react-router-dom'
 
 import { authorizationUsers } from '../../../service/authorizationUsers'
 import { setLogInEmail, setLogInPassword } from '../../../store/actions/authorizationUsers.action'
-//Scss
 import classesForm from '../FormStyle.module.scss'
 
 const SignIn = () => {

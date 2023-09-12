@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
-
-//Action
 import {
   setUsername,
   setEmail,
@@ -11,7 +9,6 @@ import {
   setApproval,
 } from '../../../store/actions/register.action'
 import { registerUsers } from '../../../service/registerUsers'
-//Scss
 import classesForm from '../FormStyle.module.scss'
 
 import classes from './SignUp.module.scss'

@@ -2,11 +2,9 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams, useNavigate } from 'react-router-dom'
 import { Alert } from 'antd'
-
 import { fetchCreatePost } from '../../service/createPost'
 import { fetchUpdatePost } from '../../service/updatePost'
 import { fetchGetPost } from '../../service/getPost'
-
 import {
   setTitlePost,
   setDescriptionPost,
@@ -17,7 +15,7 @@ import {
   clearFormPost,
 } from '../../store/actions/createPost.action'
 
-
+//Scss
 import classes from './CreatePost.module.scss'
 
 const CreatePost = () => {

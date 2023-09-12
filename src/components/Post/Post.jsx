@@ -1,18 +1,16 @@
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown'
 import { Link, useParams } from 'react-router-dom'
 import { Spin, Popconfirm, Alert } from 'antd'
 import format from 'date-fns/format'
 import nextId from 'react-id-generator'
-
 import { fetchGetPost } from '../../service/getPost'
 import { fetchDeletePost } from '../../service/deletePost'
 import { fetchLikePost } from '../../service/likePost'
 import authorImg from '../../assets/img/photo.svg'
 import likeImg from '../../assets/img/like.svg'
 import likeActiveImage from '../../assets/img/likeActive.svg'
-
 import classes from './Post.module.scss'
 
 const Post = () => {

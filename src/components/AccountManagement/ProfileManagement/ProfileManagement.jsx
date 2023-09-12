@@ -1,13 +1,13 @@
-
+import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
 
 import imgProfile from '../../../assets/img/photo.svg'
-
+//Action
 import { logOut } from '../../../store/actions/authorizationUsers.action'
 import { clearDataUserAction } from '../../../store/actions/dataUser.action'
 
-
+//Scss
 import classes from './ProfileManagement.module.scss'
 
 const ProfileManagement = () => {

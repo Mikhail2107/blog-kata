@@ -1,5 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
 
+//Reducers
 import { getPostsListReducer } from './reducers/getPostList.reducer'
 import { getPostReducer } from './reducers/getPost.reducer'
 import { paginationReducer } from './reducers/pagination.reducer'
@@ -22,4 +23,4 @@ const store = configureStore({
   },
 })
 
-export default { store }
+export { store }

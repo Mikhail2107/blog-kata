@@ -1,3 +1,1 @@
-import { PostCard } from './PostCard'
-
-export { PostCard }
+export { PostCard } from './PostCard'

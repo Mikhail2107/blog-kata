@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Pagination } from 'antd'
-
 import { PostCard } from '../PostCard'
 import { paginationAction } from '../../store/actions/pagination.action'
 import { fetchGetPostsList } from '../../service/getPostsList'
-
 import classes from './PostsLists.module.scss'
 
 const PostsList = () => {

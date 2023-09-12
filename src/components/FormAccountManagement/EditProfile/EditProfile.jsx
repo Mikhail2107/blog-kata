@@ -1,17 +1,13 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-
-//Service
 import { fetchUpdateUser } from '../../../service/updateUser'
-//Action
 import {
   updateUsername,
   updateEmail,
   updatePassword,
   updateAvatarImage,
 } from '../../../store/actions/updateUser.action'
-//Scss
 import classesForm from '../FormStyle.module.scss'
 
 const Profile = () => {

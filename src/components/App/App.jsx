@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { Routes, Route, Link } from 'react-router-dom'
-
-//Components
 import { NotExistingPage } from '../NotExistingPage'
 import { PostsList } from '../PostsList'
 import { Post } from '../Post'
@@ -12,9 +10,6 @@ import { SignUp } from '../FormAccountManagement/SignUp'
 import { SignIn } from '../FormAccountManagement/SignIn'
 import { Profile } from '../FormAccountManagement/EditProfile'
 import { CreatePost } from '../CreatePost'
-//Action
-
-//Scss
 import classes from './App.module.scss'
 
 const App = () => {
