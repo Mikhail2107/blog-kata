@@ -88,4 +88,4 @@ const PostCard = ({ title, description, tagList, favoritesCount, author, created
   )
 }
 
-export { PostCard }
+export default PostCard

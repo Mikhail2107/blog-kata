@@ -7,4 +7,4 @@ const NotExistingPage = () => {
   return <Alert className={classes['alert']} message="Not Existing Page" type="error" />
 }
 
-export { NotExistingPage }
+export default NotExistingPage

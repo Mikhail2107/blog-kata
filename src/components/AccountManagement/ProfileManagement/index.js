@@ -1,1 +1,3 @@
-export { ProfileManagement } from './ProfileManagement'
+import ProfileManagement from './ProfileManagement'
+
+export default ProfileManagement

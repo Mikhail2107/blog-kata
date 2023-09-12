@@ -28,7 +28,7 @@ const Profile = () => {
   const email = useSelector((store) => store.updateUser.email)
   const newPassword = useSelector((store) => store.updateUser.newPassword)
   const avatarImage = useSelector((store) => store.updateUser.avatarImage)
-  //Error
+ 
   const emailError = useSelector((store) => store.updateUser.emailError)
   const usernameError = useSelector((store) => store.updateUser.usernameError)
 
@@ -107,4 +107,4 @@ const Profile = () => {
   )
 }
 
-export { Profile }
+export default Profile

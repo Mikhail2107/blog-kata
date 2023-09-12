@@ -28,4 +28,4 @@ const RegistrationAndEntrance = () => {
   )
 }
 
-export { RegistrationAndEntrance }
+export default RegistrationAndEntrance

@@ -16,7 +16,6 @@ import {
   clearFormPost,
 } from '../../store/actions/createPost.action'
 
-//Scss
 import classes from './CreatePost.module.scss'
 
 const CreatePost = () => {
@@ -188,4 +187,4 @@ const CreatePost = () => {
   )
 }
 
-export { CreatePost }
+export default CreatePost

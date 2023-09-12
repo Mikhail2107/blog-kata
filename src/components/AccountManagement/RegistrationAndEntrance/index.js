@@ -1,1 +1,3 @@
-export { RegistrationAndEntrance } from './RegistrationAndEntrance'
+import RegistrationAndEntrance from './RegistrationAndEntrance'
+
+export default RegistrationAndEntrance

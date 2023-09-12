@@ -1,1 +1,3 @@
-export { NotExistingPage } from './NotExistingPage'
+import NotExistingPage from './NotExistingPage'
+
+export default NotExistingPage
