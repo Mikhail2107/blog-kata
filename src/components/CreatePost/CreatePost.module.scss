@@ -51,6 +51,16 @@
   color: white;
   background-color: $blue;
 }
+.button--disabled {
+  max-width: 319px;
+  border-radius: 5px;
+  padding: 8px 0;
+  color: white;
+  background-color: gray;
+}
+.button--disabled:hover {
+  cursor:not-allowed ;
+}
 
 .fieldset {
   display: flex;

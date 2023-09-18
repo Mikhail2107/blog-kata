@@ -69,12 +69,17 @@ const CreatePost = () => {
       })
     }
   }, [slug, post])
+  const emptyArea = () => {
+    if (titlePost.length && descriptionPost.length && textPost.length && valid) {
+      return true
+    }
+  }
 
   const onCreatePost = (e) => {
     e.preventDefault()
-    console.log('create')
-    setCreatePost(true)
-    if (titlePost.trim() && descriptionPost.trim() && textPost.trim() && valid) {
+    
+    if (titlePost.trim() && descriptionPost.trim() && textPost.trim() && valid) {      
+      setCreatePost(true)
       if (!slug) {
         dispatch(fetchCreatePost(userToken, titlePost, descriptionPost, textPost, tagList))
       } else {
@@ -103,6 +108,7 @@ const CreatePost = () => {
       }
     }
   }
+  const classButton = emptyArea() ? classes['button'] : classes['button--disabled']
 
   return (
     <>
@@ -177,9 +183,10 @@ const CreatePost = () => {
               {tag ? <span className={classes['span']}>тэг не может быть пустым</span> : null}
               {tagInclude ? <span className={classes['span']}>уже есть такой тэг</span> : null}
             </fieldset>
-            <button type="submit" className={classes['button']} onClick={onCreatePost}>
+            <button type="submit" className={classButton} onClick={onCreatePost} disabled={!emptyArea()}>
               Send
             </button>
+            {!emptyArea() ? <span className={classes['span']}>В посте имеются пустые поля, которые нужно заполнить</span> : null}
           </form>
         </div>
       )}
