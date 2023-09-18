@@ -1,4 +1,4 @@
-export const fetchUpdatePost = (slug, token, title, description, body) => {
+export const fetchUpdatePost = (slug, token, title, description, body, tagList) => {
   fetch(`https://blog.kata.academy/api/articles/${slug}`, {
     method: 'put',
     headers: {
@@ -10,6 +10,7 @@ export const fetchUpdatePost = (slug, token, title, description, body) => {
         title,
         description,
         body,
+        tagList,
       },
     }),
   })

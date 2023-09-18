@@ -77,13 +77,13 @@ const CreatePost = () => {
 
   const onCreatePost = (e) => {
     e.preventDefault()
-    
+    setCreatePost(true)
     if (titlePost.trim() && descriptionPost.trim() && textPost.trim() && valid) {      
-      setCreatePost(true)
+      
       if (!slug) {
         dispatch(fetchCreatePost(userToken, titlePost, descriptionPost, textPost, tagList))
       } else {
-        fetchUpdatePost(slug, userToken, titlePost, descriptionPost, textPost)
+        fetchUpdatePost(slug, userToken, titlePost, descriptionPost, textPost, tagList)
       }
     }
   }
