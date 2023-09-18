@@ -26,15 +26,13 @@ const PostsList = () => {
     dispatch(paginationAction(page))
   }
 
-  return (
-    <>
-      <div className={classes['posts-list']}>
-        {articles.map((el) => (
-          <PostCard key={el.slug} {...el} />
-        ))}
-      </div>
+  return (    
+    <div className={classes['posts-list']}>
+      {articles.map((el) => (
+        <PostCard key={el.slug} {...el} />
+      ))}
       <Pagination current={page} total={articlesCount} pageSize={limit} showSizeChanger={false} onChange={changePage} />
-    </>
+    </div>    
   )
 }
 
